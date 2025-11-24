@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Projects</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .carousel-track {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+
+        /* Small screens (mobile) */
+        @media (max-width: 786px) {
+            .carousel-track {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+                gap: 2rem;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+
+            .project-content {
+                padding: 1rem;
+            }
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/quote-gen.jpg" alt="Random Quote Generator"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Random Quote Generator</h3>
+                                <p class="project-desc">Generates random quotes with each click, providing fresh
+                                    inspiration every time.</p>
+                                <a href="https://talha-on-git.github.io/Random-Quote-Gen/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/todo-app.jpg" alt="To-Do App"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">To-Do App</h3>
+                                <p class="project-desc">A simple to-do list app for adding, editing, and deleting tasks.
+                                </p>
+                                <a href="https://your-link-here" target="_blank" class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/cryptographer.jpg" alt="Matrix cryptographer"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Matrix cryptographer</h3>
+                                <p class="project-desc">Displays current weather and forecasts for any city.</p>
+                                <a href="https://talha-on-git.github.io/Matrix-Cryptographer/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/ecommerce-app.jpg" alt="E-commerce Store"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">E-commerce Store</h3>
+                                <p class="project-desc">A simple e-commerce store for buying and selling products.</p>
+                                <a href="https://e-commerce-app-delta-beryl.vercel.app/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/calorie-counter.jpg" alt="Calorie Counter"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Calorie Counter</h3>
+                                <p class="project-desc">A calorie counter for tracking daily calorie intake.</p>
+                                <a href="https://talha-on-git.github.io/Calorie-Counter/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/us-number-checker.jpg" alt="US Number Checker"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">US Number Checker</h3>
+                                <p class="project-desc">A tool for checking if a US phone number is valid.</p>
+                                <a href="https://talha-on-git.github.io/US-Number-Checker/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/palindrome-checker.jpg" alt="Palindrome Checker"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Palindrome Checker</h3>
+                                <p class="project-desc">A tool for checking if a string is a palindrome.</p>
+                                <a href="https://talha-on-git.github.io/Palindrome-Checker/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/daraz-ui-clone.jpg" alt="Daraz Clone (design)"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Daraz Clone (design)</h3>
+                                <p class="project-desc">A clone of Daraz's old website build to practice CSS</p>
+                                <a href="https://talha-on-git.github.io/Daraz-UI-Clone/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                        <div class="project-card side" style="opacity: 1;">
+                            <div class="project-image">
+                                <img src="images/roman-numeral.jpg" alt="Roman Numeral Converter"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Roman Numeral Converter</h3>
+                                <p class="project-desc">A tool for converting numbers to Roman numerals.</p>
+                                <a href="https://talha-on-git.github.io/Roman-Numerals-Converter/" target="_blank"
+                                    class="project-link">View Project →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

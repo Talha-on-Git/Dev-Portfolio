@@ -4,102 +4,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talha-Y Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    
+    <title>Portfolio - Web Developer & Data Scientist</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav id="navbar">
-        <ul id="menu-list">
-            <li class="menu-items"><a href="#home-sec">Home</a></li>
-            <li class="menu-items"><a href="#projects-sec">Projects</a></li>
-            <li class="menu-items"><a href="#skills-sec">Skills</a></li>
-            <li class="menu-items"><a href="#about-sec">About</a></li>
-            <li class="menu-items"><a href="#contact-sec">Contact Me</a></li>
-        </ul>
-    </nav>
-    <section id="home-sec">
-        <div id="sec1-text">
-            <h3>Hi, I'm</h3>
-            <h1 id="name" class="fade-in">Talha Yousuf</h1>
-            <h2 id="dev-head1" class="typewriter">a Front-End <span class="dif-color-text">Developer</span></h2>
-            <h2 id="dev-head2" class="typewriter">An Aspiring <span class="dif-color-text">Data Scientist AT FAST</span></h2>
-        </div>
-        <div id="sec1-image">
-            <img src="https://cdn3d.iconscout.com/3d/premium/thumb/web-design-3d-icon-download-in-png-blend-fbx-gltf-file-formats--illustrator-logo-ui-grid-pack-seo-icons-4569698.png"
-                alt="web-design" id="web-design-image">
-        </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Talha.dev</div>
 
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Talha Yousuf</h1>
+            <div class="hero-subtitle">
+                <span class="field-text">Web Developer</span>
+            </div>
+        </div>
     </section>
-    <section id="projects-sec">
-        <h2 style="font-size: 2rem;">Projects</h2>
-        <div id="projects">
-            <!-- <div class="project-cards">
-                <div id="project1">
-                    <div class="img-div">
-                        <img src="c:\Users\DELL\Downloads\Quote Gen pic.jpg" alt="Quote Gen" id="quote-gen-img">
-                    </div>
-                    <h5 class="project-heading">Random Quote Generator</h5>
-                    <p class="project-text">Generates random quotes with each click, providing fresh inspiration every
-                        time.</p>
-                    <p><a href="https://talha-on-git.github.io/Random-Quote-Gen/" class="live-text"><span
-                                class="material-symbols-outlined live-icon">
-                                visibility
-                            </span>Live</a></p>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/My Picture.jpg" alt="Your profile">
                 </div>
-            </div> -->
+                <div class="about-text">
+                    <p>I'm a passionate full-stack developer with expertise in the MERN stack and an aspiring data
+                        scientist pursuing my BS in Data Science at FAST NUCES. I combine technical excellence with
+                        creative problem-solving to build impactful web applications and data-driven solutions.</p>
+                    <p>With a strong foundation in web development, I'm expanding my skills in data science and machine
+                        learning. I'm driven by curiosity and a commitment to continuous learning.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="skills-sec">
-        <h2 style="font-size: 2rem;">Skills</h2>
-        <div id="skills">
-            <img src="https://res.cloudinary.com/do0pop1de/image/upload/f_auto,q_auto/v1/src%20for%20portfolio%20website/skills%20icons/html"
-                alt="HTML 5" class="skills-img" title="HTML">
-            <img src="https://res.cloudinary.com/do0pop1de/image/upload/f_auto,q_auto/v1/src%20for%20portfolio%20website/skills%20icons/css"
-                alt="CSS 3" class="skills-img" title="CSS">
-            <img src="https://res.cloudinary.com/do0pop1de/image/upload/f_auto,q_auto/v1/src%20for%20portfolio%20website/skills%20icons/js"
-                alt="JS" title="JavaScript" class="skills-img">
-            <img src="https://res.cloudinary.com/do0pop1de/image/upload/f_auto,q_auto/v1/src%20for%20portfolio%20website/skills%20icons/typescript"
-                alt="TyprScript" class="skills-img" title="TyprScript">
+
+    <!-- Education Section -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="education-title">DM School System</h3>
+                        <p class="education-period">Matriculation In Computer Science</p>
+                        <p class="education-desc">Foundation in core subjects and academic excellence</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="education-title">Govt National College</h3>
+                        <p class="education-period">Intermediate In Computer Science</p>
+                        <p class="education-desc">Completed intermediate education with focus on science</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="education-title">FAST NUCES</h3>
+                        <p class="education-period">BS Data Science (Current)</p>
+                        <p class="education-desc">Pursuing bachelor's in Data Science with strong technical foundation
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="about-sec">
-        <div id="about-text">
-        <h2>About Me!</h2>
-            <p id="about-info">I am just starting my journey in web development and actively expanding my skills in coding and design. I
-                enjoy exploring new technologies and building projects that push my creativity and technical abilities.
-                Check out my work as I grow and develop in the world of web development!</p>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://www.developer-tech.com/wp-content/uploads/2021/02/mongodb-atlas-google-cloud-partnership-nosql-databases-integrations-2.jpg"
+                        alt="Mongo db image" style="height: 3rem; width: 3rem;">
+                    <span>MongoDB</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"
+                        alt="sql image" style="height: 2.5rem; width: 3.5rem;">
+                    <span>SQL</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*XP-mZOrIqX7OsFInN2ngRQ.png"
+                        alt="express image" style="width: 4.5rem; height: 3rem;">
+                    <span>Express</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                        alt="tailwind image" style="width: 3rem; height: 2rem;">
+                    <span>Tailwind</span>
+                </div>
+                <div class="skill-card">
+                    <img src="https://miro.medium.com/1*-8c5bXmKhpKg8NRnBMu0zQ.gif" alt="ejs image"
+                        style="width: 4rem; height: 2.5rem;">
+                    <span>EJS</span>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="contact-sec">
-        <h2>Contact Me</h2>
-        <div id="contact-box">
-            <ul id="contact-list">
-                <li class="contact-li-items"><a href="mailto:talhayousuf107@gmail.com"><span class="material-symbols-outlined contact-icons">
-                    mail
-                    </span>talhayousuf107@gmail.com</a></li>
-                <li class="contact-li-items"><a href="tel:+92 320-8319189"><span class="material-symbols-outlined contact-icons">
-                    call
-                    </span>+92 320-8319189</a></li>
-                <li class="contact-li-items"><a href="https://github.com/Talha-on-Git"><img src="https://res.cloudinary.com/do0pop1de/image/upload/f_auto,q_auto/v1/src%20for%20portfolio%20website/skills%20icons/github" alt="GitHub" title="GitHub" class="contact-icons">Talha-on-Git</a></li>
-            </ul>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>Full Stack Development</h3>
+                        <p>Baitussalam Tech Park</p>
+                    </div>
+                    <p class="cert-desc">Comprehensive training in MERN stack development and full-stack web
+                        applications</p>
+                    <button class="print-btn"
+                        onclick="printCertificate('Full Stack Development - Baitussalam Tech Park')">
+                        <i class="fas fa-print"></i> Upload & Print Certificate
+                    </button>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-header">
+                        <h3>JavaScript Algorithms</h3>
+                        <p>freeCodeCamp</p>
+                    </div>
+                    <p class="cert-desc">Mastery of JavaScript fundamentals, algorithms, and data structures</p>
+                    <button class="print-btn" onclick="printCertificate('JavaScript Algorithms - freeCodeCamp')">
+                        <i class="fas fa-print"></i> Upload & Print Certificate
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <h5><span class="material-symbols-outlined contact-icons" >
-            copyright
-            </span>2024 Talha Yousuf</h5>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        <a href="projects.html">
+            <button id="project-btn">
+                View all projects
+            </button>
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+923208319189">+92 320 831 9189</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:talhayousuf107@gmail.com">talhayousuf107@gmail.com</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Talha-on-Git" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://gitlab.com/talhayousuf107" target="_blank" class="social-link">
+                            <i class="fab fa-gitlab"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p><i class="fa-regular fa-copyright"></i> 2025 Talha yousuf. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script src="script.js"></script>
 </body>
 
