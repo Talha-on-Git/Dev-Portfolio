@@ -205,6 +205,7 @@ contactForm.addEventListener("submit", function (e) {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
+  console.log("Contact Form Submitted");
   console.log(name);
   console.log(email);
   console.log(message);
